@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/songlist"],{1331:function(t,n,e){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var e={props:{title:{type:String,default:""},link:{type:String,default:""},list:{type:Array,default:function(){return[]}},scrollX:{type:Boolean,default:!1},showTitle:{type:Boolean,default:!0}},data:function(){return{}},methods:{toDetail:function(n){t.navigateTo({animationDuration:500,animationType:"pop-in",url:"/pages/index/musicalbum?id="+n.id})},toAlbum:function(){t.switchTab({url:"/pages/music/index"})}}};n.default=e}).call(this,e("543d")["default"])},3092:function(t,n,e){"use strict";var u;e.d(n,"b",(function(){return a})),e.d(n,"c",(function(){return l})),e.d(n,"a",(function(){return u}));var a=function(){var t=this,n=t.$createElement,e=(t._self._c,t.scrollX?null:t.__map(t.list,(function(n,e){var u=t.__get_orig(n),a=n.playCount>1e4?Math.round(n.playCount/1e3):null;return{$orig:u,g0:a}}))),u=t.scrollX?t.__map(t.list,(function(n,e){var u=t.__get_orig(n),a=n.playCount>1e4?Math.round(n.playCount/1e3):null;return{$orig:u,g1:a}})):null;t.$mp.data=Object.assign({},{$root:{l0:e,l1:u}})},l=[]},"935e":function(t,n,e){},b288:function(t,n,e){"use strict";var u=e("935e"),a=e.n(u);a.a},c5d4:function(t,n,e){"use strict";e.r(n);var u=e("1331"),a=e.n(u);for(var l in u)"default"!==l&&function(t){e.d(n,t,(function(){return u[t]}))}(l);n["default"]=a.a},e50b:function(t,n,e){"use strict";e.r(n);var u=e("3092"),a=e("c5d4");for(var l in a)"default"!==l&&function(t){e.d(n,t,(function(){return a[t]}))}(l);e("b288");var o,i=e("f0c5"),r=Object(i["a"])(a["default"],u["b"],u["c"],!1,null,null,null,!1,u["a"],o);n["default"]=r.exports}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/songlist-create-component',
+    {
+        'components/songlist-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("e50b"))
+        })
+    },
+    [['components/songlist-create-component']]
+]);

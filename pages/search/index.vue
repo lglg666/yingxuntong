@@ -103,6 +103,7 @@
 			messagesearch(e) {
 				console.log(e.target.value)
 				this.inputInfo = e.target.value
+				this.getInfo()
 			},
 			// 触底之后触发函数，
 			getmorenews() {

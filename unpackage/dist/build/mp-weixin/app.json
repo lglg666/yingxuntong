@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/index",
+    "pages/search/index",
+    "pages/music/index",
+    "pages/music/searchalbumlist",
+    "pages/index/musicalbum"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#e8f4d9",
+    "backgroundColor": "#e8f4d9",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#2C2C2C",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "影视",
+        "iconPath": "static/icon/viedo.png",
+        "selectedIconPath": "static/icon/viedo1.png"
+      },
+      {
+        "pagePath": "pages/music/index",
+        "text": "音乐",
+        "iconPath": "static/icon/music.png",
+        "selectedIconPath": "static/icon/music1.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "根据用户位置智能推荐位置所在的内容"
+    }
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

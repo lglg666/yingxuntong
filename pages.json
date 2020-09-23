@@ -16,13 +16,44 @@
 		"style": {
 			"navigationBarTitleText": "搜索"
 		}
+	},
+	{
+		"path": "pages/music/index",
+		"style": {
+			"navigationBarTitleText": "音乐"
+		}
+	},
+	{
+	    "path" : "pages/music/searchalbumlist",
+	    "style" : {}
+	},
+	{
+	    "path" : "pages/index/musicalbum",
+	    "style" : {}
 	}
+	
 	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#2C2C2C",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "影视",
+			"iconPath": "static/icon/viedo.png",
+			"selectedIconPath": "static/icon/viedo1.png"
+		}, {
+			"pagePath": "pages/music/index",
+			"text": "音乐",
+			"iconPath": "static/icon/music.png",
+			"selectedIconPath": "static/icon/music1.png"
+		}]
+	},
 	"globalStyle": {
-		"navigationStyle": "custom",
-		"navigationBarTextStyle": "white",
+		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#007AFF",
-		"backgroundColor": "#FFFFFF"
+		"navigationBarBackgroundColor": "#e8f4d9",
+		"backgroundColor": "#e8f4d9",
+		"navigationStyle":"custom"
 	}
 }

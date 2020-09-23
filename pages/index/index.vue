@@ -18,7 +18,7 @@
 			 indicator-active-color="#0081ff">
 				<swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''" @click="getBanner(item)">
 					<view class="swiper-item">
-						<image :src="item.url" mode="widthFix" v-if="item.type=='image'"></image>
+						<image :src="item.url" v-if="item.type=='image'"></image>
 						<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
 					</view>
 				</swiper-item>
@@ -146,22 +146,26 @@
 					id: 26754233,
 					type: 'image',
 					url: '../../static/img/videoList/1.jpg',
-					title: '八佰'
+					title: '八佰',
+					img:'https://img9.doubanio.com/view/photo/l/public/p2615992304.jpg'
 				}, {
-					id: 30176393,
+					id: 30128916,
 					type: 'image',
 					url: '../../static/img/videoList/2.jpg',
-					title: '误杀'
+					title: '夺冠',
+					img:'https://img3.doubanio.com/view/photo/l/public/p2581131201.jpg'
 				}, {
-					id: 27668250,
+					id: 27195078,
 					type: 'image',
 					url: '../../static/img/videoList/3.jpg',
-					title: '南方车站的聚会'
+					title: '急先锋',
+					img:'https://img9.doubanio.com/view/photo/l/public/p2619027144.jpg'
 				}, {
-					id: 30198715,
+					id: 25907124,
 					type: 'image',
 					url: '../../static/img/videoList/4.jpg',
-					title: '吹哨人'
+					title: '姜子牙',
+					img:'https://img1.doubanio.com/view/photo/l/public/p2617446867.jpg'
 				}],
 				dotStyle: false, // 轮播图样式
 				current: 0,
@@ -241,7 +245,7 @@
 			getBanner(item) {
 				uni.setStorage({
 						key: 'storage_bg',
-						data: 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2559577569.jpg',
+						data: item.img,
 						success: function() {}
 					}),
 					uni.setStorage({
