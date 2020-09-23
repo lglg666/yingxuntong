@@ -18,7 +18,7 @@
 			 indicator-active-color="#0081ff">
 				<swiper-item v-for="(item,index) in swiperList" :key="index" :class="cardCur==index?'cur':''" @click="getBanner(item)">
 					<view class="swiper-item">
-						<image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>
+						<image :src="item.url" mode="widthFix" v-if="item.type=='image'"></image>
 						<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
 					</view>
 				</swiper-item>
@@ -143,10 +143,10 @@
 				loadStatu: false, // loading是否显示
 				listStatus: 'loading', // loading状态
 				swiperList: [{ // 轮播图
-					id: 30466885,
+					id: 26754233,
 					type: 'image',
 					url: '../../static/img/videoList/1.jpg',
-					title: '我们永不言弃'
+					title: '八佰'
 				}, {
 					id: 30176393,
 					type: 'image',
